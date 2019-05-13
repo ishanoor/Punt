@@ -1,9 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;    // importa una classe static
 
-public class TestPunt {
-	
-    
+public class TestPunt {  
 	 @Test
     public void TsetX() {
     	 Punt pX = new Punt();
@@ -18,6 +16,14 @@ public class TestPunt {
     	 assertEquals(4, pY.getY());
    	 
     }
+	 
+	 @Test
+	 public void testPuntDefinit() {
+	     // comprova que el constructor Punt(int,int) deixi els valors correctes
+	     Punt p = new Punt(3, 4);
+	     assertEquals(3, p.getX());
+	     assertEquals(4, p.getY());
+	 }
     
 
     public static void main(String args[]) {
