@@ -2,19 +2,23 @@ import org.junit.*;
 import static org.junit.Assert.*;    // importa una classe static
 
 public class TestPunt {
-    @Test
-    public void testPuntConstructor() {
-        // comprova que el constructor Punt() pugui ser cridat
-        Punt p = new Punt();
+	
+    
+	 @Test
+    public void TsetX() {
+    	 Punt pX = new Punt();
+    	 pX.setX(3);
+    	 assertEquals(3, pX.getX());
+   	 
     }
-
-    @Test
-    public void testPuntBuit() {
-        // comprova que el constructor Punt() deixi a 0 els valors
-        Punt p = new Punt();
-        assertEquals(0, p.getX()); // Afirma que la coordenada x val 0
-        assertEquals(0, p.getY());
+	 @Test
+    public void TsetY() {
+    	Punt pY = new Punt();
+    	pY.setY(4);
+    	 assertEquals(4, pY.getY());
+   	 
     }
+    
 
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
