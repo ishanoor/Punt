@@ -22,6 +22,7 @@
 		this.x=x; this.y=y; 
 	}
 	
+
 	public Punt() {
 		this(0, 0); 
 	}

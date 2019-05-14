@@ -14,7 +14,6 @@ public class TestPunt {
     	Punt pY = new Punt();
     	pY.setY(4);
     	 assertEquals(4, pY.getY());
-   	 
     }
 	 @Test
 	 public void testSuma() {
