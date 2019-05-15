@@ -1,1 +1,1 @@
-Proves unitàries amb JUnit
+Proves unitaries amb JUnit
