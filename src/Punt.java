@@ -1,37 +1,37 @@
  public class Punt {
-     private int x, y;  
-     
-     public int getX() { 
-    	 return x; 
-    	}
-     
-     public int getY() {
-    	 return y; 
-    	}
-     
-     
-	public void setX(int x) {
-		this.x = x;		
+  
+	 private int[] coord;
+	 
+	 public Punt(int x, int y) {
+			coord = new int[2];
+			coord[0] = x;
+			coord[1] = y;
 	}
-	
-	public void setY(int y) {
-		this.y= y;	
-	}
-	
-	public Punt(int x, int y) { 
-		this.x=x; this.y=y; 
-	}
-	
-
-	public Punt() {
-		this(0, 0); 
-	}
-	
-	public void suma(Punt p) { 
-		x+=p.x;
-		y+=p.y;
+	 
+		public Punt() {
+			this(0,0);
 		}
-     
-     
+
+		public int getX() {
+			return coord[0];
+		}
+
+		public void setX(int x) {
+			coord[0] = x;
+		}
+
+		public int getY() {
+			return coord[1];
+		}
+		
+		public void setY(int y) {
+			coord[1]= y;
+		}
+		
+		public void Suma(Punt p) {
+			coord[0] += p.getX();
+			coord[1] += p.getY();
+	}
+        
  }
  
